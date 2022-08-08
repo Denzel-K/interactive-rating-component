@@ -200,7 +200,7 @@ p {
     margin: auto;
 }
 
-@media (maxwidth: 600px) {
+@media (max-width:600px;) {
     body {
         background-color: hsl(216, 12%, 8%);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
