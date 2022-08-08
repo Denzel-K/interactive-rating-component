@@ -8,42 +8,74 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; font-size: 18px;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+  <div class="container">
+    <article>
+      <div class="box1">
 
-  <!-- Rating state start -->
+        <img class="img1" src="images/icon-star.svg" alt="star">
 
-  How did we do?
+        <h1>How did we do?</h1>
+       
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <div class="again"></div>
 
-  1 2 3 4 5
+        <div class="numbers">
+          <button class="no" type="button">1</button>
+          <button class="no" type="button">2</button>
+          <button class="no" type="button">3</button>
+          <button class="no" type="button">4</button>
+          <button class="no" type="button">5</button>
+        </div>  
 
-  Submit
+        <div class="submit">
+          <button class="btn" type="button">
+            SUBMIT
+          </button>
+        </div>
+      </div>
 
-  <!-- Rating state end -->
+      <div class="box2 hidden">   
+        <div class="img-box">
+          <img class="img2" src="images/illustration-thank-you.svg" alt="thanks">   
+        </div>
+        <br>
+        <div class="thankyou">
+          <div class="rated">You selected <span class="rating"></span> out of 5</div>
+    
+          <h1 style="text-align: center">Thank you!</h1>
+    
+          <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
 
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <div class="back">
+            <button class="backbtn" type="button">
+              BACK
+            </button>
+          </div>
+    
+        </div>
+      </article>   
+    </div>
+    
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Denzel Kariuki</a>.
+    </div>
   </div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
